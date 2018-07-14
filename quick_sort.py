@@ -1,5 +1,11 @@
 ### Implementation of Quick Sort algorithm
 
+## Worst case complexity: O(N*N) when we choose the smallest or largest element as pivot
+## Best case complexity: O(NlogN) when we choose the middle element as pivot
+## Average case complexity: O(NlogN)
+
+## Space complexity: O(1)  (in-place sort) --- advantage over Merge Sort
+
 def partition(arr,low,high):
 	i = (low)-1
 	pivot = arr[high]
