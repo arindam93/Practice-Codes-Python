@@ -9,3 +9,4 @@ Implementation of following problems in Python:
 7. Three Sum problem (Given an array and a number x, check for triplets in the array with sum as x)
 8. Duplicates in Array
 9. Kth largest element in Array
+10. Median of two sorted Arrays
