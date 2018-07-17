@@ -8,6 +8,7 @@ Implementation of following problems in Python:
 6. Majority Element in Array
 7. Two Sum problem (Given an array and a number x, check for pairs in the array with sum as x)
 8. Three Sum problem (Given an array and a number x, check for triplets in the array with sum as x)
-9. Duplicates in Array
-10. Kth largest element in Array
-11. Median of two sorted Arrays
+9. Three Sum closest problem 
+10. Duplicates in Array
+11. Kth largest element in Array
+12. Median of two sorted Arrays
