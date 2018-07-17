@@ -4,56 +4,73 @@
 
 ###The complexity should be O(log(n)).
 
-## Method 1 (merge routine of merge sort)
-## Time complexity: O(n)
 
-def median_two_sorted_arrays(arr1,arr2):
+## Time complexity: O(logn) (Divide and conquer paradigm)
 
-	n = len(arr1)
-	m = len(arr2)
-	lst = [] ## merged array
-	i = 0
-	j = 0
 
-	while i<n and j<m:
-		if (arr1[i] < arr2[j]):
-			lst.append(arr1[i])
-			i = i+1
-		else:
-			lst.append(arr2[j])
-			j = j+1
+## function to return the median of two arrays
+def find_median(arr1,arr2,m,n):
 
-	# code snippet to return median if the arrays are of same size 
-	# (the merged size will be even always)
 
-	# if (i == n or j == m):
-	# 	return (lst[-1]+lst[-2])/2.0
-
-	# code snippet to return median if the arrays are of different size
-
-	if i<n:
-		while i<n:
-			lst.append(arr1[i])
-			i = i+1
-	if j<m:
-		while j<m:
-			lst.append(arr2[j])
-			j = j+1
-
-	k = len(lst)
-	if (k%2) != 0:
-		return lst, lst[(k-1)/2]
+	if (m%2) == 0:
+		m1 = (arr1[m/2] + arr1[(m-1)/2])/2.0
 	else:
-		return lst, (lst[k/2]+lst[(k-1)/2])/2.0
+		m1 = float(arr1[m/2])
+
+	if (n%2) == 0:
+		m2 = (arr2[n/2] + arr2[(n-1)/2])/2.0
+	else:
+		m2 = float(arr2[n/2])
+
+	return m1, m2
 
 
-arr1 = [10,15,20,25,30,35,37,40]
-arr2 = [2,6,8,12]
+def median_binary_search(arr1,arr2):
 
-lst, _median = median_two_sorted_arrays(arr1,arr2)
-print "The first array is:", arr1
-print "The second array is:", arr2
-print "The merged array is:", lst
-print "The median of merged array is:", _median
+	len1 = len(arr1)
+	len2 = len(arr2)
 
+	print arr1
+	print arr2
+
+	m1, m2 = find_median(arr1,arr2,len1,len2)
+
+	mid1 = len1/2
+	mid2 = len2/2
+
+	if (len1 == 2 and len2 == 2):
+		return (max(arr1[0],arr2[0]) + min(arr1[1],arr2[1]))/2.0  # final median
+
+	elif (m2 > m1 and len1 > 2 and len2 > 2):
+
+		if (len2%2) != 0:
+			mid2 = mid2 + 1
+
+		arr1 = arr1[mid1:]
+		arr2 = arr2[:mid2]
+		return median_binary_search(arr1,arr2)
+
+	elif (m2 < m1 and len1 > 2 and len2 > 2):
+
+		if (len1%2) != 0:
+			mid1 = mid1 + 1
+
+		arr1 = arr1[:mid1]
+		arr2 = arr2[mid2:]
+		return median_binary_search(arr1,arr2)
+
+
+
+ #arr1 = [10,15,20,25,30,35,37,40]
+# arr1 = [1,3,5,7,9,11,13,17,40,100]
+# arr2 = [6,8,10,12,14,16,18,20,60,90]
+
+# arr1 = [1,3,5,7,9,11,30]
+# arr2 = [15,30,40,50,60,70,80]
+
+arr1 = [6, 8, 12, 13,18, 20]
+arr2 = [3, 7, 9, 13, 15, 22]
+
+_median = median_binary_search(arr1,arr2)
+print "The median of the merged array is:", _median
 
