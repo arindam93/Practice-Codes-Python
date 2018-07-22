@@ -1,6 +1,6 @@
 ### Tree traversals in a Binary Tree
 
-### Preorder / Inorder / Postorder traversal (Breadth First traversal)
+### Preorder / Inorder / Postorder traversal (Depth First traversal)
 
 ## Complexity: O(n) where n = number of nodes in the tree
 
