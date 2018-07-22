@@ -13,3 +13,6 @@ Implementation of following problems in Python:
 11. Kth largest element in Array
 12. Median of two sorted Arrays
 13. Advantage Shuffle (greedy approach)
+14. Tree traversals (Inorder / Preorder / Postorder)
+15. Array Nesting Problem
+16. Count Inversions in Array
