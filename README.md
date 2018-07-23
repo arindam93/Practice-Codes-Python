@@ -15,5 +15,6 @@ Implementation of following problems in Python:
 13. Advantage Shuffle (greedy approach)
 14. Tree traversals (Inorder / Preorder / Postorder)
 15. Level order traversal
-16. Array Nesting Problem
-17. Count Inversions in Array
+16. Height of a tree (using recursion)
+17. Array Nesting Problem
+18. Count Inversions in Array
