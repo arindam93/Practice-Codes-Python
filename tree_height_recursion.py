@@ -20,7 +20,7 @@ def max_depth_recursion(root):
 	return max(left_depth,right_depth) + 1
 
 
-def max_depth_iterative(root)
+
 
 root = Node(6)
 root.left = Node(3)
