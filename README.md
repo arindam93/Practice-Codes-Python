@@ -14,7 +14,7 @@ Implementation of following problems in Python:
 12. Median of two sorted Arrays
 13. Advantage Shuffle (greedy approach)
 14. Tree traversals (Inorder / Preorder / Postorder)
-15. Level order traversal
+15. Level order traversal (Recursive / Iterative)
 16. Height of a tree (using recursion)
 17. Array Nesting Problem
 18. Count Inversions in Array
