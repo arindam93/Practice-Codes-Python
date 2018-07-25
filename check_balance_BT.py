@@ -27,17 +27,16 @@ def max_depth_recursion(root):
 def check_balance(root):
 
 	if root is None:
-		return 0
+		return True
 
 	l_height = max_depth_recursion(root.left)
 	r_height = max_depth_recursion(root.right)
 
 	diff = abs(l_height - r_height)
 
-	if diff > 1:
-		print "The tree is not balanced"
-	else:
-		print "The tree is balanced"
+	if diff <= 1 and check_balance(root.left) is True and check_balance(root.right) is True:
+		return True
+	
 
 
 ## Driver code
@@ -54,5 +53,9 @@ root.right.right.left = Node(18)
 root.right.right.left.left = Node(17)
 root.right.right.left.left.left = Node(16)
 
-check_balance(root)
+if check_balance(root):
+	print "Balanced"
+else:
+	print "Unbalanced"
+
 
