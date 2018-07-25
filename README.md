@@ -18,3 +18,4 @@ Implementation of following problems in Python:
 16. Height of a tree (Recursive / Iterative)
 17. Array Nesting Problem
 18. Count Inversions in Array
+19. Binary Search Tree
