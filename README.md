@@ -19,3 +19,4 @@ Implementation of following problems in Python:
 17. Array Nesting Problem
 18. Count Inversions in Array
 19. Binary Search Tree
+20. Check balance in Binary Tree
