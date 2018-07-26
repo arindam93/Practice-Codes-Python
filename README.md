@@ -22,3 +22,4 @@ Implementation of following problems in Python:
 20. Check balance in Binary Tree
 21. Kth frequent element in an Array
 22. Binary Tree from Inorder and Preorder
+23. Binary Tree from Inorder and Postorder
