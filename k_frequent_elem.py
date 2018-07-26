@@ -17,7 +17,6 @@ def k_freq_elem(arr,k):
 
 
 	val_freq = sorted(val_freq.items(), key = lambda s: s[1])[::-1]
-	print val_freq
 
 	lst = []
 
