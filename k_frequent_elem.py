@@ -17,12 +17,11 @@ def k_freq_elem(arr,k):
 
 
 	val_freq = sorted(val_freq.items(), key = lambda s: s[1])[::-1]
-	print val_freq
 
 	lst = []
 
 	for m in range(k):
-		elem = val_freq[:k][m][0]
+		elem = val_freq[m][0]
 		lst.append(elem)
 
 	return lst
