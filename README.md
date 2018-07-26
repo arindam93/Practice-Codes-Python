@@ -20,3 +20,4 @@ Implementation of following problems in Python:
 18. Count Inversions in Array
 19. Binary Search Tree
 20. Check balance in Binary Tree
+21. Kth frequent element in an Array
