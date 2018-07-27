@@ -25,3 +25,4 @@ Implementation of following problems in Python:
 23. Binary Tree from Inorder and Postorder
 24. Sunset Buildings
 25. Check Anagrams
+26. Convert a Binary Tree to its Mirror Tree (Iterative)
